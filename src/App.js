@@ -10,7 +10,6 @@ import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 
 import './App.css';
 
-
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -34,7 +33,6 @@ class App extends React.Component {
               ...snapshot.data()
             }
           })
-          console.log(this.state)
         })
       } else {
         this.setState({
