@@ -59,7 +59,7 @@ class SingIn extends Component {
           />
           <div className='buttons'>
             <CustomButton type="submit">Sing in</CustomButton>
-            <CustomButton onClick={singInWithGoogle} isGoogleSignIn>
+            <CustomButton type="button" onClick={singInWithGoogle} isGoogleSignIn>
               {' '}Sing in with Google{' '}
             </CustomButton>
           </div>
