@@ -4,7 +4,7 @@ import axios from "axios";
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100
-  const publishableKey = process.env.REACT_APP_STRIPE_KEY
+  const publishableKey = 'pk_test_51KWXclItCSdkqK71CMtw9gPXdsi77zTdYIiTFXZZ04EaQGOBtaC3lRHpcOxIKGSGuLhEoAmErligngzDQ7DJI2qz00ofzrAioG'
 
   const onToken = token => {
     axios.post('payment', { amount: priceForStripe, token })
